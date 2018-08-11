@@ -7,11 +7,11 @@ import {Quote} from '../quote'
   styleUrls: ['./quote-display.component.css']
 })
 export class QuoteDisplayComponent implements OnInit {
-  hero='windstorm'
-  // quote: Quote={
-  //   name: 'cherucole',
-  //   quote: 'This is a test quote'
-  // };
+quote: Quote={
+  name: "cherucole"
+  quote: "This is a test quote"
+};
+
   constructor() { }
 
   ngOnInit() {
