@@ -9,7 +9,7 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
 quotes=[
-new Quote("cherucole", "this is a test quote"),
+new Quote("cherucole", "this is a test quote", new Date(2018,3,14)),
 // new Quote("cherucole", "this is a test quote"),
 // new Quote("cherucole", "this is a test quote"),
 
