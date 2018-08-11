@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import {Quote} from '../quote'
 import {NgForm} from '@angular/forms';
 
@@ -16,21 +16,10 @@ new Quote("cherucole", "this is a test quote on angular project to be submitted 
 // new Quote("cherucole", "this is a test quote"),
 
 ]
-  // quote: Quote={
-  //   name: "cherucole"
-  //   quote: "This is a test quote"
-  // };
 
-    constructor() { }
+    constructor() {
+    }
+onRemoveQuoteClick = function(){
 
-    ngOnInit() {
-    }
-    onSubmit(f: NgForm) {
-      let quote = f.value.quote;
-      let name = f.value.name;
-      this.quotes.push({
-        'name' : name,
-        'quote' : quote
-      })
-    }
+}
   }
