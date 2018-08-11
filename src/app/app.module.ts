@@ -7,6 +7,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDisplayComponent } from './quote-display/quote-display.component';
 import { QuoteVoteComponent } from './quote-vote/quote-vote.component';
 import { QuoteComponent } from './quote/quote.component';
+import { TimeEllapsedPipe } from './time-ellapsed.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { QuoteComponent } from './quote/quote.component';
     QuoteFormComponent,
     QuoteDisplayComponent,
     QuoteVoteComponent,
-    QuoteComponent
+    QuoteComponent,
+    TimeEllapsedPipe
   ],
   imports: [
     BrowserModule,

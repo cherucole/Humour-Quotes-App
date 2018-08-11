@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
 
 quotes=[
 new Quote("cherucole", "this is a test quote"),
-new Quote("cherucole", "this is a test quote"),
-new Quote("cherucole", "this is a test quote"),
+// new Quote("cherucole", "this is a test quote"),
+// new Quote("cherucole", "this is a test quote"),
 
 ]
   // quote: Quote={

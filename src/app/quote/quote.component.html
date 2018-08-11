@@ -2,4 +2,4 @@
 <ul>
     <li *ngFor='let quote of quotes'>{{quote.quote}}</li>
 </ul>
-<p *ngIf='quotes.length > 5'>You have too many goals</p>
+<p *ngIf='quotes.length < 5'>You have less goals</p>
