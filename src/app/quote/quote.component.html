@@ -1,6 +1,26 @@
-<h1>My Quotes</h1>
-    <h4 *ngFor='let quote of quotes'>{{quote.quote}}</h4>
+<div class="card" style="width: 28rem;">
+  <div class="card-body">
 
-      <p *ngFor='let quote of quotes'>
-        <br>
-        posted {{quote.completeDate|timeEllapsed}} days ago</p>
+  <h5 *ngFor='let quote of quotes'>{{quote.name}} </h5>
+      <h4 *ngFor='let quote of quotes'>"{{quote.quote}}"</h4>
+
+        <p *ngFor='let quote of quotes'>
+          <br>
+          posted {{quote.completeDate|timeEllapsed}} days ago</p>
+        </div>
+
+</div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="container row">
+              <h5 class="col card-title">{{quote.quote}}</h5>
+              <button class="col btn btn-danger"
+                    (click)="onRemovePostClick()">Remove</button>
+            </div>
+            <h4 class="card-text">{{quote.quote}}</h4>
+            <app-quote-vote [numberOfVotes]="postVotes"
+                      (change)="onPostVotesUpdate($event)">
+            </app-quote-vote>
+          </div>
+        </div>
