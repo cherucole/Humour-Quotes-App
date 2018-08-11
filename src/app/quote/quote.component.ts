@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Quote} from '../quote'
+import {NgForm} from '@angular/forms';
+
 
 @Component({
   selector: 'app-quote',
@@ -23,5 +25,12 @@ new Quote("cherucole", "this is a test quote on angular project to be submitted 
 
     ngOnInit() {
     }
-
+    onSubmit(f: NgForm) {
+      let quote = f.value.quote;
+      let name = f.value.name;
+      this.quotes.push({
+        'name' : name,
+        'quote' : quote
+      })
+    }
   }
