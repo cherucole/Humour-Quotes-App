@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuoteDisplayComponent } from './quote-display/quote-display.component';
 import { QuoteVoteComponent } from './quote-vote/quote-vote.component';
 import { QuoteComponent } from './quote/quote.component';
 import { TimeEllapsedPipe } from './time-ellapsed.pipe';
@@ -13,7 +12,6 @@ import { TimeEllapsedPipe } from './time-ellapsed.pipe';
   declarations: [
     AppComponent,
     QuoteFormComponent,
-    QuoteDisplayComponent,
     QuoteVoteComponent,
     QuoteComponent,
     TimeEllapsedPipe
