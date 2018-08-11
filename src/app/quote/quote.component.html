@@ -1,6 +1,8 @@
 <h1>My Quotes</h1>
-<ul>
-    <li *ngFor='let quote of quotes'>{{quote.quote}} posted {{quote.completeDate|timeEllapsed}} days ago</li>
-</ul>
+    <h4 *ngFor='let quote of quotes'>{{quote.quote}}</h4>
+
+      <p *ngFor='let quote of quotes'>
+        <br>
+        posted {{quote.completeDate|timeEllapsed}} days ago</p>
 
 <p *ngIf='quotes.length < 5'>You have less goals</p>

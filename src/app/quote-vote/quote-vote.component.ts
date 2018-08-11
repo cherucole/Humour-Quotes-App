@@ -6,14 +6,14 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
   styleUrls: ['./quote-vote.component.css']
 })
 export class QuoteVoteComponent implements OnInit {
-@Input() numberOfVotes: number;
+@Input() numberOfVotes: number =0;
 @Output()
 change: EventEmitter<number>= new EventEmitter<number>();
-likeButtonClick(){
+upVoteButtonClick(){
   this.numberOfVotes++;
   this.change.emit(this.numberOfVotes);
 }
-dislikeButtonClick(){
+downVoteButtonClick(){
   this.numberOfVotes--;
   this.change.emit(this.numberOfVotes);
 }
