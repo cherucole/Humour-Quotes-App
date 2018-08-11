@@ -1,5 +1,4 @@
 export class Quote {
-name: string;
-quote: string;
-// completeDate:Date;
+  constructor(public name:string, public quote:string){}
+
 }
