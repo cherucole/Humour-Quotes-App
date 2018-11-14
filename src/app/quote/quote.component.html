@@ -1,19 +1,18 @@
 <div class="card" style="width: 30rem;">
   <div class="card-body">
-<div class="container row">
+    <div class="container row">
 
-  <h5 *ngFor='let quote of quotes'>{{quote.name}} </h5>
+      <h5 *ngFor='let quote of quotes'>{{quote.name}} </h5>
       <h4 *ngFor='let quote of quotes'>"{{quote.quote}}"</h4>
 
-        <p *ngFor='let quote of quotes'>
-          <br>
-          posted {{quote.completeDate|timeEllapsed}} days ago</p>
-        </div>
-        <app-quote-vote></app-quote-vote>
-        <button class=" btn btn-danger"
-            (click)="onRemoveQuoteClick()">Delete</button>
+      <p *ngFor='let quote of quotes'>
+        <br>
+        posted {{quote.completeDate|timeEllapsed}} days ago</p>
+    </div>
+    <app-quote-vote></app-quote-vote>
+    <button class=" btn btn-danger" (click)="onRemoveQuoteClick()">Delete</button>
 
-      </div>
+  </div>
 
 
 </div>
